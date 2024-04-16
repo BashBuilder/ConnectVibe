@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&family=Neuton:wght@200;300;400;700;800&family=Playfair+Display:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,300;1,700&display=swap');
+
+/* Global default styles */
+*{
+  font-family: 'Josefin Sans', sans-serif;
+}
+html{
+  height: 100%;
+}
+body{
+  height: 100%;
+}
+/* ----------------------------------- */
+
+/* this is for font sizes management */
+
+h1, h2, h3 {
+  color: var(--slate-800);
+  line-height: 1;
+}
+h4, h5, h6 {
+  color: var(--slate-700);
+  line-height: 1;
+}
+p, input{
+  color: var(--slate-700);
+}
+/* ---------------------------------------- */
+
+/* this handles the scroll bar */
+
+::-webkit-scrollbar {
+  width: 0;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--slate-200);
+  border-radius: 4rem;
+}
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+input::-webkit-file-upload-button{
+  background-color: transparent ;
+  -webkit-text-fill-color: var(--slate-400) ;
+  padding: .4rem;
+  margin: .4rem;
+  border: 1px solid var(--slate-400);
+}
+
+/* End of scroll bar management */
+
+/* ----------------------------------------- */
+/* this page handles the media query*/
+@media screen and (max-width: 737px) {
+  html{
+    font-size: 14px;
+  }
+}
+@media (min-width: 738px) and (max-width: 1023px) {
+  html{
+    font-size: 14px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1279px) {
+  /* Styles for small desktop screens */
+}
+@media (min-width: 1280px) and (max-width: 1439px) {
+  /* Styles for medium desktop screens */
+}
+@media (min-width: 1440px) {
+  /* Styles for large desktop screens */
+}
+/* ----------------------------- */
+

@@ -1,0 +1,135 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --slate-100: rgb(244, 245, 247);
+    --slate-200: rgb(226, 232, 240);
+    --slate-300: rgb(203, 213, 225);
+    --slate-400: rgb(148, 163, 184);
+    --slate-500: rgb(100, 116, 139);
+    --slate-600: rgb(71, 85, 105);
+    --slate-700: rgb(51, 65, 85);
+    --slate-800: rgb(29, 29, 29);
+    --slate-900: rgb(12, 12, 12);
+    --black: black;
+    --white: white;
+    --pry: #3170dd;
+
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+
+    --radius: 0.5rem;
+  }
+  .darkMode {
+    --slate-900: rgb(244, 245, 247);
+    --slate-800: rgb(226, 232, 240);
+    --slate-700: rgb(203, 213, 225);
+    --slate-600: rgb(148, 163, 184);
+    --slate-500: rgb(100, 116, 139);
+    --slate-400: rgb(71, 85, 105);
+    --slate-300: rgb(51, 65, 85);
+    --slate-200: rgb(29, 29, 29);
+    --slate-100: rgb(12, 12, 12);
+    --black: white;
+    --white: black;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: hsl(212.7, 26.8%, 83.9);
+  }
+  .inputStyle {
+    @apply w-full border-b-[.015rem] border-b-[--slate-200] bg-transparent pt-2 text-[1.2rem] outline-none placeholder:text-transparent;
+  }
+  .floatingLabel {
+    @apply absolute -left-2 -top-4 scale-[.8] text-[1.2rem] transition-all duration-200 ease-linear;
+  }
+}
+
+@layer base {
+  * {
+    @apply m-0 box-border scroll-smooth border-border p-0;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  input {
+    @apply autofill:appearance-none autofill:bg-transparent autofill:bg-opacity-0 autofill:bg-none autofill:transition-colors autofill:duration-infinite;
+  }
+  h1 {
+    @apply text-[3rem];
+  }
+  h2 {
+    @apply text-[3rem];
+  }
+  h3 {
+    @apply text-[2.5rem];
+  }
+  h4 {
+    @apply text-[2rem];
+  }
+  h5 {
+    @apply text-[1.5rem];
+  }
+  h5 {
+    @apply text-[1.2];
+  }
+  a {
+    @apply no-underline;
+  }
+  body {
+    @apply overflow-x-hidden bg-[--slate-200] transition duration-300 ease-linear;
+  }
+}
